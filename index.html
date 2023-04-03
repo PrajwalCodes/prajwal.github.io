@@ -141,32 +141,36 @@
 						<div class="topic-text">Send me a message</div>
 						<p>If you have any work from me or any types of queries, you can send me message from here. It's
 							my pleasure to help you. You can also call me or email me.</p>
-						<form onsubmit="sendEmail(); reset(); return false;">
+							<form id="email-form" method="post" action="https://formsubmit.co/ad668bb3885f6d70e9180c7618e1dbe7">
 							<div class="input-box">
-								<input class="name" type="text" placeholder="Enter your name">
+								<input class="name" type="text" placeholder="Enter your name" name="Name" required>
 							</div>
 							<div class="input-box">
-								<input class="email" type="text" placeholder="Enter your email">
+								<input class="email" type="text" placeholder="Enter your email" name="Email" required>
 							</div>
 							<div class="input-box message-box">
-								<input class="message" type="text" placeholder="Enter your message">
+								<input class="message" type="text" placeholder="Enter your message" name="Message" required>
 							</div>
 							<div class="button">
-								<a href="thank.html"><input type="button" value="Send Now"></a>
+								<button type="submit" value="Send Now">Send Now</button>
 							</div>
+							<input type="hidden" name="_next" value="http://127.0.0.1:5500/thank.html">
+							<input type="hidden" name="_captcha" value="false">
+							
 						</form>
 					</div>
 				</div>
 			</div>
+			
 		</section>
+		
 	</main>
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
 	</script>
-
-
+	
 </body>
 
 </html>

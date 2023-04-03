@@ -355,22 +355,24 @@ nav a:hover:before {
   .right-side .input-box textarea{
     padding-top: 6px;
   }
-  .right-side .button{
+   .button button{
     display: inline-block;
     margin-top: 12px;
   }
-  .right-side .button input[type="button"]{
+  .button button[type="submit"]{
     color: #fff;
     font-size: 18px;
     outline: none;
     border: none;
-    padding: 8px 16px;
+    padding: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
     border-radius: 6px;
     background: #3e2093;
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .button input[type="button"]:hover{
+  .button button[type="submit"]:hover{
     background: #5029bc;
   }
   
@@ -407,5 +409,5 @@ nav a:hover:before {
      margin-left: 0;
    }
 
-
+  
   }
